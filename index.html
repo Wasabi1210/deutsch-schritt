@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Deutsch Schritt für Schritt</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap">
+<link rel="stylesheet" href="css/app.css">
+
+</head>
+<body>
+<div class="app">
+  <aside class="side" id="side">
+    <a class="logo" href="#home">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="var(--accent)"/><path d="M9 29h7v-6h7v-6h8" fill="none" stroke="var(--accent-ink)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="31" cy="11" r="2.6" fill="var(--gold-soft)"/></svg>
+      <div><b>Deutsch</b><span>Schritt für Schritt</span></div>
+    </a>
+    <nav class="nav" id="nav" aria-label="Розділи"></nav>
+    <div class="side-foot">
+      <div class="side-level" id="sideLevel"></div>
+      <div class="tools" id="sideTools"></div>
+    </div>
+  </aside>
+  <button class="scrim" data-act="menu" aria-label="Закрити меню"></button>
+  <div class="col">
+    <header class="topbar">
+      <button class="tool" data-act="menu" aria-label="Меню"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <a class="logo" href="#home">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="var(--accent)"/><path d="M9 29h7v-6h7v-6h8" fill="none" stroke="var(--accent-ink)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div><b>Deutsch</b><span>Schritt für Schritt</span></div>
+      </a>
+      <div class="tools" id="topTools"></div>
+    </header>
+    <main class="main"><div class="view" id="view"></div></main>
+  </div>
+</div>
+<div class="modal" id="modal" hidden><div class="modal-box"><button class="icon-btn modal-x" data-act="closeModal" aria-label="Закрити"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button><div id="modalBody"></div></div></div>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<script src="js/data-lessons-1.js"></script>
+<script src="js/data-lessons-2.js"></script>
+<script src="js/data-lessons-3.js"></script>
+<script src="js/data-grammar.js"></script>
+<script src="js/data-extra.js"></script>
+<script src="js/core.js"></script>
+<script src="js/exercises.js"></script>
+<script src="js/app.js"></script>
+<script src="js/pages.js"></script>
+</body>
+</html>
