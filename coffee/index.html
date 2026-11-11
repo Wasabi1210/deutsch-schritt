@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кофейня «Зерно»</title>
+  <meta name="description" content="Кофейня «Зерно» — свежая обжарка, домашняя выпечка и уютная атмосфера.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="top">
+    <nav class="nav container">
+      <a href="#top" class="logo">☕ Зерно</a>
+      <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#menu">Меню</a></li>
+        <li><a href="#contacts">Адрес и часы</a></li>
+        <li><a href="#feedback">Обратная связь</a></li>
+      </ul>
+    </nav>
+    <div class="hero container">
+      <h1>Кофейня «Зерно»</h1>
+      <p>Свежая обжарка, домашняя выпечка и место, где хочется задержаться.</p>
+      <a href="#menu" class="btn">Смотреть меню</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="menu">
+      <div class="container">
+        <h2>Меню</h2>
+        <div class="tabs" role="tablist">
+          <button class="tab active" role="tab" aria-selected="true" data-category="coffee">Кофе</button>
+          <button class="tab" role="tab" aria-selected="false" data-category="tea">Чай и другое</button>
+          <button class="tab" role="tab" aria-selected="false" data-category="desserts">Десерты</button>
+        </div>
+        <ul class="menu-list" id="menu-list"></ul>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contacts">
+      <div class="container contacts">
+        <div>
+          <h2>Где нас найти</h2>
+          <p class="address">ул. Садовая, 12<br>вход со двора, первый этаж</p>
+          <p><a href="tel:+70000000000">+7 (000) 000-00-00</a></p>
+        </div>
+        <div>
+          <h2>Часы работы</h2>
+          <table class="hours">
+            <tr data-days="1,2,3,4,5"><td>Пн–Пт</td><td>08:00 – 21:00</td></tr>
+            <tr data-days="6"><td>Суббота</td><td>09:00 – 22:00</td></tr>
+            <tr data-days="0"><td>Воскресенье</td><td>10:00 – 20:00</td></tr>
+          </table>
+          <p class="status" id="open-status"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="feedback">
+      <div class="container narrow">
+        <h2>Обратная связь</h2>
+        <p>Есть вопрос, пожелание или хотите забронировать столик? Напишите нам.</p>
+        <form class="form" id="feedback-form" novalidate>
+          <label>Имя
+            <input type="text" name="name" autocomplete="name" required>
+            <span class="error" aria-live="polite"></span>
+          </label>
+          <label>Email
+            <input type="email" name="email" autocomplete="email" required>
+            <span class="error" aria-live="polite"></span>
+          </label>
+          <label>Сообщение
+            <textarea name="message" rows="5" required></textarea>
+            <span class="error" aria-live="polite"></span>
+          </label>
+          <button type="submit" class="btn">Отправить</button>
+          <p class="form-success" id="form-success" hidden>Спасибо! Мы ответим вам в ближайшее время.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Кофейня «Зерно»</p>
+      <p>ул. Садовая, 12 · <a href="#top">Наверх ↑</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
